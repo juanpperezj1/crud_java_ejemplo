@@ -11,6 +11,9 @@
         </style>
     </head>
     <body>
-        <jsp:include page="./faqs-list.jsp"/>  
+        <%
+            String redirectURL = "/Faqs/list";
+            response.sendRedirect(redirectURL);
+        %>  
     </body>
 </html>
