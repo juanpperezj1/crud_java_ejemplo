@@ -59,6 +59,8 @@ public class FaqServlet extends HttpServlet {
 	private void listFaq(HttpServletRequest request, HttpServletResponse response)
 			throws SQLException, IOException, ServletException {
 		List<Faq> listFaq = faqDAO.selectAllFaqs();
+                String usuario = "Usuario editor";
+                request.setAttribute("usuario", usuario);
 		request.setAttribute("listFaq", listFaq);
 		RequestDispatcher dispatcher = request.getRequestDispatcher("faqs-list.jsp");
 		dispatcher.forward(request, response);

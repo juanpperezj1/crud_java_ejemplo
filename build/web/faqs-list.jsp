@@ -24,6 +24,9 @@
                             <li class="nav-item">
                                 <a href="<%=request.getContextPath()%>/list" class="nav-link">FAQs</a>
                             </li>
+                            <li class="nav-item">
+                                <a href="<%=request.getContextPath()%>/list" class="nav-link">${usuario}</a>
+                            </li>
 			</ul>
 		</nav>
 	</header>
